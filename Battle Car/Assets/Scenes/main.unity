@@ -156,11 +156,12 @@ Prefab:
         type: 2}
       propertyPath: m_PlayerPrefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1454528035386046, guid: 95011e153a8fcfe40ba08946daa20c5f,
+        type: 2}
     - target: {fileID: 114704385054387400, guid: aa3c2515f5a0e42f2bac508ff6d37db0,
         type: 2}
       propertyPath: m_PlayerSpawnMethod
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114704385054387400, guid: aa3c2515f5a0e42f2bac508ff6d37db0,
         type: 2}
