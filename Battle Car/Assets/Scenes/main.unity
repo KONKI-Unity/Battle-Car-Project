@@ -1536,47 +1536,6 @@ GameObject:
 --- !u!4 &700436833
 Transform:
   m_ObjectHideFlags: 0
-<<<<<<< HEAD
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4536287332668218, guid: 2d97073f7621a3a4982431ef710fa7a6, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 7.6495056
-      objectReference: {fileID: 0}
-    - target: {fileID: 4536287332668218, guid: 2d97073f7621a3a4982431ef710fa7a6, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.00091457367
-      objectReference: {fileID: 0}
-    - target: {fileID: 4536287332668218, guid: 2d97073f7621a3a4982431ef710fa7a6, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 34.260986
-      objectReference: {fileID: 0}
-    - target: {fileID: 4536287332668218, guid: 2d97073f7621a3a4982431ef710fa7a6, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4536287332668218, guid: 2d97073f7621a3a4982431ef710fa7a6, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4536287332668218, guid: 2d97073f7621a3a4982431ef710fa7a6, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4536287332668218, guid: 2d97073f7621a3a4982431ef710fa7a6, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4536287332668218, guid: 2d97073f7621a3a4982431ef710fa7a6, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 2d97073f7621a3a4982431ef710fa7a6, type: 2}
-  m_IsPrefabParent: 0
-=======
   m_PrefabParentObject: {fileID: 4345135832978132, guid: 2d97073f7621a3a4982431ef710fa7a6,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -1726,7 +1685,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 93e86b57e56570d46814839867bf9a52, type: 2}
   m_PrefabInternal: {fileID: 298129487}
->>>>>>> cd04cc41275694453b68fc0b1d170fc1a781e15c
 --- !u!1001 &836601216
 Prefab:
   m_ObjectHideFlags: 0
@@ -7247,6 +7205,7 @@ GameObject:
   - component: {fileID: 2053837624}
   - component: {fileID: 2053837623}
   - component: {fileID: 2053837622}
+  - component: {fileID: 2053837625}
   m_Layer: 0
   m_Name: AK-47
   m_TagString: Untagged
@@ -7326,6 +7285,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2053837620}
   m_Mesh: {fileID: 4300000, guid: 7d0124d3bdb8cba4f834aae3a9962ddc, type: 3}
+--- !u!114 &2053837625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2053837620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31ec7ec0d3aab43db889364bb70f7c6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 0
 --- !u!1 &2087373145
 GameObject:
   m_ObjectHideFlags: 0
