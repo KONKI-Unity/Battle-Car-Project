@@ -772,7 +772,7 @@ GameObject:
   - component: {fileID: 1050707937}
   - component: {fileID: 1050707936}
   m_Layer: 5
-  m_Name: InputFieldIPAdress
+  m_Name: InputField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1156,7 +1156,7 @@ MonoBehaviour:
   m_LogLevel: 2
   m_PlayerPrefab: {fileID: 1454528035386046, guid: 95011e153a8fcfe40ba08946daa20c5f,
     type: 2}
-  m_AutoCreatePlayer: 0
+  m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 0
   m_OfflineScene: menu
   m_OnlineScene: main
