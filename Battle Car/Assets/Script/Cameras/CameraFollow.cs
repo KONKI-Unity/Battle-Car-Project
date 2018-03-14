@@ -43,7 +43,8 @@ public class CameraFollow : MonoBehaviour
 
         Quaternion currentRotation = Quaternion.Euler(0, cameraAngle, 0);
         transform.position = target.position;
-        transform.position -= currentRotation * Vector3.forward * distance;
+
+        
 
         Vector3 tmp = transform.position;
         tmp.y = cameraHeight;

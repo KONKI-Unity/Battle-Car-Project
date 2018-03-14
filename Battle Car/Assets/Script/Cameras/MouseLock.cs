@@ -15,22 +15,42 @@ public class MouseLock : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+        if (Input.GetKeyDown("space")) {
+            if (!IsMouseOffScreen())
+            {
+                rotationX -= Input.GetAxis("Mouse Y") * sensityvity;
+                rotationY += Input.GetAxis("Mouse X") * sensityvity;
 
-		if (!IsMouseOffScreen ()) {
-			rotationX -= Input.GetAxis ("Mouse Y") * sensityvity;
-			rotationY += Input.GetAxis ("Mouse X") * sensityvity;
 
 
+                transform.rotation = Quaternion.Euler(rotationX, rotationY, 0);
 
-			transform.rotation = Quaternion.Euler (rotationX, rotationY, 0);
-
-		}
+            }
+            
+        }
+		
 
 	}
 
-	private bool IsMouseOffScreen(){
+    public Transform target;
 
-		if (Input.mousePosition.x <= 2 || Input.mousePosition.y <= 2 || Input.mousePosition.x >= Screen.width || Input.mousePosition.y >= Screen.height)
+    public float smoothSpeed = 0.125f;
+    public Vector3 offset;
+
+    void FixedUpdate()
+    {
+        Vector3 desiredPosition = target.position + offset;
+        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+        transform.position = smoothedPosition;
+
+        transform.LookAt(target);
+    }
+
+   
+
+    private bool IsMouseOffScreen(){
+
+		if (Input.mousePosition.x <= 0 || Input.mousePosition.y <= 0 || Input.mousePosition.x >= Screen.width || Input.mousePosition.y >= Screen.height)
 			return true;
 
 		return false;
