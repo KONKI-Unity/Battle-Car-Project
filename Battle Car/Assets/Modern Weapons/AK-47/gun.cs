@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class gun : MonoBehaviour {
+public class Gun : MonoBehaviour {
 
 	public GameObject bullet;
 	public int power;
