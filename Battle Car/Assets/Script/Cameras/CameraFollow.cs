@@ -38,8 +38,8 @@ public class CameraFollow : MonoBehaviour
         float cameraAngle = transform.eulerAngles.y;
         float cameraHeight = transform.position.y;
 
-        cameraAngle = Mathf.LerpAngle(cameraAngle, wantedAngle, rotationDamping * Time.deltaTime);
-        cameraHeight = Mathf.LerpAngle(cameraHeight, wantedHeight, heightDamping * Time.deltaTime);
+        //cameraAngle = Mathf.LerpAngle(cameraAngle, wantedAngle, rotationDamping * Time.deltaTime);
+        //cameraHeight = Mathf.LerpAngle(cameraHeight, wantedHeight, heightDamping * Time.deltaTime);
 
         Quaternion currentRotation = Quaternion.Euler(0, cameraAngle, 0);
         transform.position = target.position;
