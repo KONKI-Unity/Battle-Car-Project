@@ -70,6 +70,7 @@ GameObject:
   - component: {fileID: 4603000154117956}
   - component: {fileID: 33795653878117520}
   - component: {fileID: 23288718493421334}
+  - component: {fileID: 114464415963714912}
   m_Layer: 0
   m_Name: AK-47
   m_TagString: Untagged
@@ -318,6 +319,25 @@ GameObject:
   m_Layer: 0
   m_Name: WheelHubRearLeft
   m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1432672544871948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4291876406430152}
+  - component: {fileID: 20572610383337694}
+  - component: {fileID: 124599482584349334}
+  - component: {fileID: 81927617134095680}
+  - component: {fileID: 114632889535635126}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -737,6 +757,19 @@ Transform:
   m_Father: {fileID: 4627911313118092}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4291876406430152
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1432672544871948}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.6495056, y: 0.9990854, z: -44.260986}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4536287332668218}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4340266033746252
 Transform:
   m_ObjectHideFlags: 1
@@ -826,6 +859,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4029128377299842}
+  - {fileID: 4291876406430152}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1059,6 +1093,42 @@ Transform:
   m_Father: {fileID: 4029128377299842}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &20572610383337694
+Camera:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1432672544871948}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!23 &23071830771102694
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -1767,6 +1837,13 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!81 &81927617134095680
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1432672544871948}
+  m_Enabled: 1
 --- !u!82 &82582461575804864
 AudioSource:
   m_ObjectHideFlags: 1
@@ -2182,13 +2259,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   engineSoundStyle: 1
-  lowAccelClip: {fileID: 0}
-  lowDecelClip: {fileID: 0}
-  highAccelClip: {fileID: 0}
-  highDecelClip: {fileID: 0}
-  pitchMultiplier: 1
+  lowAccelClip: {fileID: 8300000, guid: c4d8928c75c21af43998193f0f038429, type: 3}
+  lowDecelClip: {fileID: 8300000, guid: c4d8928c75c21af43998193f0f038429, type: 3}
+  highAccelClip: {fileID: 8300000, guid: 03e3bd08a6e70684dbe299a3e185fdd2, type: 3}
+  highDecelClip: {fileID: 8300000, guid: 03bf91d88fce91c41995d27de63cc967, type: 3}
+  pitchMultiplier: 0.8
   lowPitchMin: 1
-  lowPitchMax: 6
+  lowPitchMax: 5
   highPitchMultiplier: 0.25
   maxRolloffDistance: 500
   dopplerLevel: 1
@@ -2204,7 +2281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62479c3465024b48b42983b1b2eeaaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkidTrailPrefab: {fileID: 0}
+  SkidTrailPrefab: {fileID: 400000, guid: 4b6aa99de5d21424eab6ae279f31475b, type: 2}
   skidParticles: {fileID: 0}
 --- !u!114 &114145957945365546
 MonoBehaviour:
@@ -2217,7 +2294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62479c3465024b48b42983b1b2eeaaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkidTrailPrefab: {fileID: 0}
+  SkidTrailPrefab: {fileID: 400000, guid: 4b6aa99de5d21424eab6ae279f31475b, type: 2}
   skidParticles: {fileID: 0}
 --- !u!114 &114247510339035550
 MonoBehaviour:
@@ -2230,7 +2307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62479c3465024b48b42983b1b2eeaaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkidTrailPrefab: {fileID: 0}
+  SkidTrailPrefab: {fileID: 400000, guid: 4b6aa99de5d21424eab6ae279f31475b, type: 2}
   skidParticles: {fileID: 0}
 --- !u!114 &114251183683856534
 MonoBehaviour:
@@ -2243,7 +2320,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46c086dc494b7fa46af8b9c0b9d7ba77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentsToDisable: []
+  componentsToDisable:
+  - {fileID: 114465502258990200}
+  - {fileID: 114001637016589988}
+  - {fileID: 20572610383337694}
+  - {fileID: 81927617134095680}
 --- !u!114 &114274066738227364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2255,7 +2336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 459cec5b068041e44a60a6e3b6abb0eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carController: {fileID: 0}
+  carController: {fileID: 114465502258990200}
 --- !u!114 &114355785780099154
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2267,7 +2348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec1e45165d1f2544bff59f5a80db8ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wheel: {fileID: 0}
+  wheel: {fileID: 1578943763265790}
 --- !u!114 &114389441488565518
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2279,7 +2360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec1e45165d1f2544bff59f5a80db8ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wheel: {fileID: 0}
+  wheel: {fileID: 1373389910872796}
 --- !u!114 &114440843704243018
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2291,7 +2372,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fffafd711dc1dbc478a49705cfe1ce3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 0}
+  car: {fileID: 114465502258990200}
+--- !u!114 &114464415963714912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1062995085165224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bee9eb6cdd5d84189c6c386bd669f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1363968648029068, guid: 821981f72d25c4434a758aecd966d56f, type: 2}
+  power: 1000000
 --- !u!114 &114465502258990200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2305,33 +2399,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CarDriveType: 2
   m_WheelColliders:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 146108386671080940}
+  - {fileID: 146526508808542726}
+  - {fileID: 146592002632070804}
+  - {fileID: 146560549521377658}
   m_WheelMeshes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1578943763265790}
+  - {fileID: 1373389910872796}
+  - {fileID: 1274296340921412}
+  - {fileID: 1642134351740128}
   m_WheelEffects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 114673803491658538}
+  - {fileID: 114084775994688180}
+  - {fileID: 114145957945365546}
+  - {fileID: 114247510339035550}
   m_CentreOfMassOffset: {x: 0, y: 0, z: 0}
-  m_MaximumSteerAngle: 0
-  m_SteerHelper: 0
-  m_TractionControl: 0
-  m_FullTorqueOverAllWheels: 0
-  m_ReverseTorque: 0
-  m_MaxHandbrakeTorque: 0
+  m_MaximumSteerAngle: 25
+  m_SteerHelper: 0.644
+  m_TractionControl: 1
+  m_FullTorqueOverAllWheels: 2500
+  m_ReverseTorque: 500
+  m_MaxHandbrakeTorque: 100000000
   m_Downforce: 100
   m_SpeedType: 0
-  m_Topspeed: 200
+  m_Topspeed: 150
   m_RevRangeBoundary: 1
-  m_SlipLimit: 0
-  m_BrakeTorque: 0
+  m_SlipLimit: 0.3
+  m_BrakeTorque: 20000
 --- !u!114 &114550833489952414
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2353,6 +2447,24 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+--- !u!114 &114632889535635126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1432672544871948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d76e06bd5f987741a0ed9733a927de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 4029128377299842}
+  distance: 10
+  height: 5
+  rotationDamping: 2
+  heightDamping: 2
+  zoomRatio: 4
+  defaultPOV: 75
 --- !u!114 &114673803491658538
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2364,7 +2476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62479c3465024b48b42983b1b2eeaaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkidTrailPrefab: {fileID: 0}
+  SkidTrailPrefab: {fileID: 400000, guid: 4b6aa99de5d21424eab6ae279f31475b, type: 2}
   skidParticles: {fileID: 0}
 --- !u!114 &114749216166033244
 MonoBehaviour:
@@ -2377,7 +2489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 459cec5b068041e44a60a6e3b6abb0eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carController: {fileID: 0}
+  carController: {fileID: 114465502258990200}
 --- !u!114 &114897329492858240
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2410,6 +2522,13 @@ MonoBehaviour:
     i15: 166
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!124 &124599482584349334
+Behaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1432672544871948}
+  m_Enabled: 1
 --- !u!146 &146108386671080940
 WheelCollider:
   m_ObjectHideFlags: 1
