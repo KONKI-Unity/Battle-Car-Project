@@ -43,7 +43,7 @@ public class Gun : NetworkBehaviour {
         RaycastHit hit;
         if(Physics.Raycast(weapon.transform.position, weapon.transform.forward, out hit, range))
         {
-            /*
+            
             Debug.Log(hit.transform.name);
             System.Console.WriteLine(hit.transform.name);
 
@@ -58,7 +58,7 @@ public class Gun : NetworkBehaviour {
             {
                 hit.rigidbody.AddForce(-hit.normal * impactForce);
             }
-            */
+            
             GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
 
             Destroy(impactGO, 2f);
