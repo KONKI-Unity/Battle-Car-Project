@@ -3134,7 +3134,7 @@ MonoBehaviour:
   range: 100
   weapon: {fileID: 1357441209579256}
   muzzleFlash: {fileID: 198545179560049584}
-  impactEffect: {fileID: 1662887544732610}
+  impactEffect: {fileID: 1521867815918118}
   impactForce: 30
   fireRate: 15
 --- !u!114 &114112916700718268
@@ -3185,7 +3185,7 @@ MonoBehaviour:
   - {fileID: 114713375104082814}
   m_CentreOfMassOffset: {x: 0, y: 0, z: 0}
   m_MaximumSteerAngle: 25
-  m_SteerHelper: 0.644
+  m_SteerHelper: 0.136
   m_TractionControl: 1
   m_FullTorqueOverAllWheels: 2500
   m_ReverseTorque: 500
@@ -3271,7 +3271,7 @@ MonoBehaviour:
   - {fileID: 114233103738389446}
   - {fileID: 20932931298791968}
   - {fileID: 81442278324730454}
-  remoteLayerName: RemotePlayer
+  remoteLayerName: remotePlayer
 --- !u!114 &114456553034823428
 MonoBehaviour:
   m_ObjectHideFlags: 1
