@@ -149,6 +149,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4099282458670350}
+  - component: {fileID: 114813441148474334}
   m_Layer: 8
   m_Name: Weapon
   m_TagString: Untagged
@@ -214,6 +215,7 @@ GameObject:
   - component: {fileID: 114737509619210158}
   - component: {fileID: 114351814981424652}
   - component: {fileID: 114112916700718268}
+  - component: {fileID: 114828500950846588}
   m_Layer: 8
   m_Name: Local Player
   m_TagString: Player
@@ -364,6 +366,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4367030784086746}
+  - component: {fileID: 54987466732400208}
+  - component: {fileID: 138879183830163560}
   m_Layer: 8
   m_Name: weaponModel
   m_TagString: Untagged
@@ -561,7 +565,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1676526810166138}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.93, z: -3.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4729508329536528}
@@ -634,7 +638,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1454528035386046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.6495056, y: 1.07, z: 34.260986}
+  m_LocalPosition: {x: 7.6495056, y: 1.06, z: 33.869}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4455926420828352}
@@ -664,8 +668,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1695292685653142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.817, z: 0.398}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1.17}
+  m_LocalPosition: {x: 0, y: 0.787, z: 0.398}
+  m_LocalScale: {x: 0.13, y: 0.13, z: 1.17}
   m_Children: []
   m_Father: {fileID: 4367030784086746}
   m_RootOrder: 1
@@ -1121,6 +1125,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!54 &54987466732400208
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1716836335995302}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &65032106156049516
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1252,6 +1271,37 @@ MonoBehaviour:
     i15: 95
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &114813441148474334
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1268993693621340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1848079e23e6ba94a824c29100b2f968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 20932931298791968}
+--- !u!114 &114828500950846588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1454528035386046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 922708ace5ab74f4db8713b365274cb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon:
+    name: Glock
+    damage: 10
+    range: 100
+  cam: {fileID: 0}
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &114834320839864342
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1265,6 +1315,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookAt: {fileID: 4603683939062396}
   camTransform: {fileID: 4455926420828352}
+  offsetX: 0
+  offsetY: 5
 --- !u!114 &114881086535783934
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1304,6 +1356,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!138 &138879183830163560
+FixedJoint:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1716836335995302}
+  m_ConnectedBody: {fileID: 54435401572077480}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!146 &146259313714870440
 WheelCollider:
   m_ObjectHideFlags: 1

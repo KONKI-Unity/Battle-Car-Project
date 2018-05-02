@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class TurretScript : MonoBehaviour {
 
-    [SerializeField]
-    Transform aimTarget;
+    public Camera cam;
 
+    void Update()
+    {
+        Vector3 mousePositionVector3 = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
 
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        mousePositionVector3 = cam.ScreenToWorldPoint(mousePositionVector3);
+    }
 }
