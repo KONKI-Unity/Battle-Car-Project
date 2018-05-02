@@ -1138,11 +1138,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa3c2515f5a0e42f2bac508ff6d37db0, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1322474898 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4603683939062396, guid: 95011e153a8fcfe40ba08946daa20c5f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1735644894}
 --- !u!1 &1372873487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,11 +1351,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!4 &1520080421 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4455926420828352, guid: 95011e153a8fcfe40ba08946daa20c5f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1735644894}
 --- !u!1001 &1618058273
 Prefab:
   m_ObjectHideFlags: 0
@@ -1477,18 +1467,8 @@ Prefab:
     - target: {fileID: 114834320839864342, guid: 95011e153a8fcfe40ba08946daa20c5f,
         type: 2}
       propertyPath: offsetY
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114834320839864342, guid: 95011e153a8fcfe40ba08946daa20c5f,
-        type: 2}
-      propertyPath: lookAt
-      value: 
-      objectReference: {fileID: 1322474898}
-    - target: {fileID: 114834320839864342, guid: 95011e153a8fcfe40ba08946daa20c5f,
-        type: 2}
-      propertyPath: camTransform
-      value: 
-      objectReference: {fileID: 1520080421}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95011e153a8fcfe40ba08946daa20c5f, type: 2}
   m_IsPrefabParent: 0
