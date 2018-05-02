@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1425,7 +1425,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &1817291219
+--- !u!1001 &1735644894
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1464,6 +1464,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114881086535783934, guid: 95011e153a8fcfe40ba08946daa20c5f,
+        type: 2}
+      propertyPath: maximumSteeringAngle
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881086535783934, guid: 95011e153a8fcfe40ba08946daa20c5f,
+        type: 2}
+      propertyPath: accelTime
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881086535783934, guid: 95011e153a8fcfe40ba08946daa20c5f,
+        type: 2}
+      propertyPath: traction
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95011e153a8fcfe40ba08946daa20c5f, type: 2}
   m_IsPrefabParent: 0
@@ -1471,7 +1486,7 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 1454528035386046, guid: 95011e153a8fcfe40ba08946daa20c5f,
     type: 2}
-  m_PrefabInternal: {fileID: 1817291219}
+  m_PrefabInternal: {fileID: 1735644894}
 --- !u!1 &1975333617
 GameObject:
   m_ObjectHideFlags: 0
