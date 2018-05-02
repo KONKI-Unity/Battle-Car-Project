@@ -638,7 +638,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1454528035386046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.6495056, y: 1.06, z: 33.869}
+  m_LocalPosition: {x: 7.6495056, y: 1.4, z: 33.869}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4455926420828352}
@@ -1316,7 +1316,7 @@ MonoBehaviour:
   lookAt: {fileID: 4603683939062396}
   camTransform: {fileID: 4455926420828352}
   offsetX: 0
-  offsetY: 5
+  offsetY: 3
 --- !u!114 &114881086535783934
 MonoBehaviour:
   m_ObjectHideFlags: 1
