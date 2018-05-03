@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - item
+  - RacingVehicle
+  - Fire
+  - ak
+  - shotgun
+  - terrain
   layers:
   - Default
   - TransparentFX

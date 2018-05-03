@@ -8,8 +8,11 @@ public class TurretScript : MonoBehaviour {
 
     void Update()
     {
-        Vector3 mousePositionVector3 = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
+        RaycastHit _hit;
+        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, 500))
+        {
 
-        mousePositionVector3 = cam.ScreenToWorldPoint(mousePositionVector3);
+            transform.LookAt((_hit.point));
+        }
     }
 }
